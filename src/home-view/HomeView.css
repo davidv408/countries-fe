@@ -1,0 +1,26 @@
+.home-view {
+  background-color: rgb(250, 250, 250);
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 540px) {
+  .home-view {
+    padding: 30px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters > *:first-child {
+    margin-bottom: 20px;
+  }
+}

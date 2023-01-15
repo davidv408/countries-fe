@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Dark Mode with rgb(43, 55, 67) */
+.dark-mode.heading-content {
+  background-color: rgb(43, 55, 67);
+  color: white;
+}
+
+.dark-mode.heading-content .ui.basic.button,
+.dark-mode.home-view .filters .ui.input,
+.dark-mode.home-view .filters .ui.input input,
+.dark-mode.home-view .filters .ui.selection,
+.dark-mode.home-view .country-list .text-content,
+.dark-mode.country-view .back-button .ui.button,
+.dark-mode.country-view .button-grid .ui.button {
+  /** Override Semantic UI */
+  background-color: rgb(43, 55, 67) !important;
+  color: white !important;
+}
+
+.heading .dark-mode.heading-content + .hr {
+  background: linear-gradient(rgb(43, 55, 67), rgb(32, 45, 54));
+}
+
+/* Dark Mode with rgb(32, 45, 54) */
+.dark-mode.home-view,
+.dark-mode.country-view {
+  background-color: rgb(32, 45, 54);
+  color: white;
+}

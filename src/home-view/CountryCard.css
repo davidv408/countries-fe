@@ -1,0 +1,23 @@
+.country-card,
+.country-card:hover {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 8px 0 rgb(0 0 0 / 5%), 0 3px 10px 0 rgb(0 0 0 / 5%);
+  color: black;
+}
+
+.country-card img {
+  height: 45%;
+  object-fit: cover;
+  border: 1px solid lightgray;
+}
+
+.text-content {
+  height: 55%;
+  padding: 20px;
+}
+
+.text-content p {
+  margin-bottom: 10px;
+}

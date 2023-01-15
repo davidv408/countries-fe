@@ -1,0 +1,22 @@
+.heading .heading-content {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading .hr {
+  width: 100%;
+  padding: 2px;
+  background: linear-gradient(lightgrey, white);
+}
+
+@media screen and (max-width: 540px) {
+  .heading .heading-content {
+    padding: 20px 30px;
+  }
+
+  .heading .heading-content {
+    flex-direction: column;
+  }
+}
